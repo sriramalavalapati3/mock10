@@ -36,7 +36,7 @@ mroute.post("/register",async(req,res)=>{
 // var pattern = 'a1A0@'
  
 // var token = randomId(len, pattern)
-        const verificationLink = `localhost:4500/api/verify-email?token=${token}`;
+        const verificationLink = `https://mock10-owwk.onrender.com/api/verify-email?token=${token}`;
 
         const transporter = nodemailer.createTransport({
             host: 'smtp.gmail.com',
